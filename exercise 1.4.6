@@ -1,0 +1,14 @@
+a.
+since n is halfed in each iteration, we get a geometric sequence of 1, 1/2, 1/4,..., 1/n.
+this means that the inner loop is executed lg(N) * (N + N/2 + N/4 + N/8 + ... + N/N) times.
+Finially, this means that the loop is executed approximately N*lg(N)
+Which can be tilde approximated to: ~N
+
+b.
+Here N is doubled each time, making it so that i quadradicly increases.
+This will be the same as above, where the outer loop is executed lg(N) times,
+and the inner loop will end up finally being executed N-times.
+This makes it simplified to N*lg(N), which can be tilde approximated to ~N
+
+c.
+Will be simplified to O(N lg(N)), which is tilde approximated to ~N.
