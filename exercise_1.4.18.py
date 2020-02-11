@@ -1,31 +1,3 @@
-Input: arr[] = {9, 6, 3, 14, 5, 7, 4};
-Output: Index of local minima is 2
-The output prints index of 3 because it is 
-smaller than both of its neighbors. 
-Note that indexes of elements 5 and 4 are 
-also valid outputs.
-
-Input: arr[] = {23, 8, 15, 2, 3};
-Output: Index of local minima is 1
-
-Input: arr[] = {1, 2, 3};
-Output: Index of local minima is 0
-
-Input: arr[] = {3, 2, 1};
-Output: Index of local minima is 2
-Recommended: Please try your approach on {IDE} first, before moving on to the solution.
-A simple solution is to do a linear scan of array and as soon as we find a local minima, we return it. The worst case time complexity of this method would be O(n).
-
-
-
-An efficient solution is based on Binary Search. We compare middle element with its neighbors. If middle element is not greater than any of its neighbors, then we return it. If the middle element is greater than its left neighbor, then there is always a local minima in left half (Why? take few examples). If the middle element is greater than its right neighbor, then there is always a local minima in right half (due to same reason as left half).
-
-Below is the implementation of the above idea :
-filter_none
-edit
-play_arrow
-
-brightness_4
 # Python3 program to find a 
 # local minima in an array 
   
