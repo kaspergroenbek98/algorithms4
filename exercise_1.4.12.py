@@ -7,6 +7,8 @@ def printdubs(l1, l2):
 	while index1 < len(l1) and  index2 < len(l2):
 		if l1[index1] == l2[index2]:
 			print(l1[index1])
+			index1 += 1 
+			index2 += 1
 
 		if l1[index1] < l2[index2]:
 			index1 += 1
